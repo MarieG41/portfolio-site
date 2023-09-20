@@ -1,0 +1,123 @@
+body{
+    background: var(--background-color);
+    width: fit-content;;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+}
+
+button{
+    font-family: var(--subtitle-font-family);
+    font-weight: var(--subtitle-font-weight);
+    font-size: var(--subtitle-font-size);
+    background: var(--background-color);
+    color: var(--buttons-color);
+    border: 4px solid var(--buttons-color);
+    border-radius: 30px;
+    padding: 4px 12px;
+    margin: 5px;
+    
+}
+#ligne-verte {
+    position: absolute;
+
+}
+h1{
+    font-family: var(--title-font-family);
+    font-weight: var(--title-font-weight);
+    font-size: var(--title-font-size);
+    color:var(--typography-color)
+}
+h3{
+    font-family: var(--subtitle-font-family);
+    font-weight: var(--subtitle-font-weight);
+    font-size: var(--subtitle-font-size);
+    color: var(--buttons-color)
+}
+h3.skills-title {
+    width: 100%;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.div--skills {
+    width: 90%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    padding: 5px;
+}
+h3.titre-formation {
+    width: 100%;
+    margin-left: 170px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.div--formations {
+    width: 90%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-left: 298px;
+    padding: 5px;
+}
+p{
+    
+    font-family: var(--plain-text-font-family);
+    font-weight: var(--plain-text-font-weight);
+    font-size: var(--plain-text-font-size);
+    color:var(--buttons-color);
+}
+progress {
+    -webkit-appearance: none;
+}
+::-webkit-progress-bar {
+    background: var(--background-color);
+    width: 250px;
+    border: 2px solid var(--buttons-color);
+    border-radius: 5px;
+}
+progress::-webkit-progress-value {
+    background-color: var(--clicked-color);
+    border-radius: 3px;
+}
+a {
+    font-family: var(--plain-text-font-family);
+    font-size: var(--plain-text-font-size);
+    font-weight: var(--plain-text-font-weight);
+    text-decoration: none;
+    margin: 0;
+}
+
+.img-projets, .video-projet{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.section--work, .section--apropos, .section--contact{
+    padding: 20px 40px;
+}
+
+#img-profile {
+    filter: drop-shadow(8px 30px var(--buttons-color));
+    display: flex;
+    margin: 0 auto;
+}
+#btn-contact, #btn-projets, #btn-apropos {
+    filter: drop-shadow(5px 10px var(--buttons-color));
+}
+.section--header {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stack {
+    width: 400px;
+}

@@ -1,0 +1,20 @@
+:root{
+    --background-color: #F5DFBB;
+    --typography-color: #0E9594;
+    --buttons-color: #264653;
+    --clicked-color: #F4A261;
+
+    --title-font-family: 'Bodoni Moda', serif;
+    --subtitle-font-family: 'Jost', sans-serif;
+    --plain-text-font-family: 'Jost', sans-serif;
+
+    --title-font-weight: 700;
+    --subtitle-font-weight: 600;
+    --plain-text-font-weight: 400;
+
+    --title-font-size: 6.25rem;
+    --subtitle-font-size: 1.875rem;
+    --plain-text-font-size: 0.75rem;
+
+}
+
