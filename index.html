@@ -16,23 +16,23 @@
         <header>
             <nav>
                 <button></button>
-                <button id="btn-contact">Contact</button>
-                <button id="btn-projets">Projets</button>
-                <button id="btn-apropos">A propos</button>
+                <button id="btn-contact"><a href="#contact">Contact</a></button>
+                <button id="btn-projets"><a href="#projets">Projets</a></button>
+                <button id="btn-apropos"><a href="#apropos">A propos</a></button>
                 
             </nav>
         </header>
         
-        <section class="section--header">
+        <div class="div--header">
             <h1>Développeur Web</h1>
             <img id="img-profile" src="./images/20230825_161359 1.png" alt="Marie souriante">
             <!--<img src="./images/Rectangle 2.png" alt="rectangle bleu-vert foncé servant de fond">-->
             <img id="ligne-verte" src="images/Vector 10.png" alt="ligne de suivi">
             <h1>Marie Gond</h1>
-        </section>
+        </div>
 
-        <section class="section--apropos">
-            <h1>A propos</h1>
+        <div class="div--apropos">
+            <h1 id="apropos">A propos</h1>
 
                 <h3 class="skills-title">SKILLS</h3>
                 <div class="div--skills">
@@ -78,9 +78,9 @@
                 </p>
             </div>
             
-        </section>
-        <section class="section--work">
-            <h1>Projets</h1>
+        </div>
+        <div class="div--work">
+            <h1 id="projets">Projets</h1>
             <div>
                 <h3></h3>
                 <div class="img-projets">
@@ -117,18 +117,18 @@
                     <img src="./images/2023.09.12-14.40.22.png" alt="La lettre 'm' dessinée avec des Glyphes sur fond jaune.">
                 </div>
             </div>
-        </section>
-        <section class="section--contact">
-            <h1>Contact</h1>
+        </div>
+        <div class="div--contact">
+            <h1 id="contact">Contact</h1>
             <div class="contact--info">
-                    <a href="mailto:mariegond8@gmail.com" target="_blank">Email</a>
-                    <br />
-                    <p>téléphone: 0649746947</p>
-                    <a href="" target="_blank">LinkedIn</a>  
-                    <br />
+                    <p class="p-contact">téléphone: 0649746947</p>
+                    <a href="mailto:mariegond8@gmail.com" target="_blank">Email</a> <br />
+                    <a href="" target="_blank">LinkedIn</a> <br />
                     <a href="" target="_blank">Instagram</a> 
             </div>
-
-        </section>
+        </div>
+        <div class="back-top-btn">
+            <button onclick="topFunction()" id="btn-top">Top</button>
+        </div>
     </body>
 </html>
