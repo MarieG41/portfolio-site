@@ -161,16 +161,13 @@ a:hover {
 .projet-laplace {
     display: flex;
     flex-direction: row;
-    margin-left: 20px;
     justify-content: center;
     
 }
-.projet-app {
+#searching--page {
     display: flex;
-    flex-direction: row;
-    margin-left: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: row-reverse;
+    justify-content: center;
 }
 
 .img-projets, .video-projet{
