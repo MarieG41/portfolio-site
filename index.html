@@ -8,51 +8,43 @@
         <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=Jost:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="param.css">
         <link rel="stylesheet" href="style.css">
-        <script src="index.js"></script>
+        <script src="index.js" defer></script>
         <title>Portfolio</title>
     </head>
-
     <body>
-        <header>
+        <header id="canvas">
             <nav>
-                <!--<button></button>-->
                 <button id="btn-contact"><a href="#contact">Contact</a></button>
                 <button id="btn-projets"><a href="#projets">Projets</a></button>
-                <button id="btn-apropos"><a href="#apropos">A propos</a></button>
-                
+                <button id="btn-apropos"><a href="#apropos">A propos</a></button>  
             </nav>
+            <div class="div--header">
+                <h1>Développeur Web</h1>
+                <img id="img-profile" src="./images/20230825_161359 1.png" alt="Marie souriante">
+                <h1>Marie Gond</h1>
+            </div>
         </header>
-        
-        <div class="div--header">
-            <h1>Développeur Web</h1>
-            <img id="img-profile" src="./images/20230825_161359 1.png" alt="Marie souriante">
-            <!--<img src="./images/Rectangle 2.png" alt="rectangle bleu-vert foncé servant de fond">-->
-            <h1>Marie Gond</h1>
-        </div>
-
         <div class="div--apropos">
             <h1 id="apropos">A propos</h1>
-
-                
                 <div class="div--skills">
                     <h3 class="skills-title">SKILLS</h3>
                     <p>HTML5, CSS3, JavaScript 
-                    <label for="file"></label><progress id="file" max="100" value="55" class="light--green">55%</progress> <br />
-                    responsive design 
-                    <label for="file"></label><progress id="file" max="100" value="55" class="light--green">55%</progress> <br />
+                    <label for="file"></label><progress id="file" max="100" value="65" class="light--green">65%</progress> <br />
+                    Responsive design 
+                    <label for="file"></label><progress id="file" max="100" value="70" class="light--green">70%</progress> <br />
                     Git et Github 
                     <label for="file"></label><progress id="file" max="100" value="55" class="light--green">55%</progress> <br />
                     Interfaces utilisateurs et ergonomie de site web 
-                    <label for="file"></label><progress id="file" max="100" value="55" class="light--green">55%</progress> <br />
+                    <label for="file"></label><progress id="file" max="100" value="75" class="light--green">75%</progress> <br />
                     <br />
-                    travail en équipe 
-                    <label for="file"></label><progress id="file" max="100" value="60" class="light--green">60%</progress> <br />
-                    capacité d’adaptation et d’organisation 
+                    Travail en équipe 
+                    <label for="file"></label><progress id="file" max="100" value="70" class="light--green">60%</progress> <br />
+                    Capacité d’adaptation et d’organisation 
                     <label for="file"></label><progress id="file" max="100" value="70" class="light--green">70%</progress> <br />
-                    sens de la communication  
+                    Sens de la communication  
                     <label for="file"></label><progress id="file" max="100" value="65" class="light--green">65%</progress> <br />
-                    esprit créatif
-                    <label for="file"></label><progress id="file" max="100" value="72" class="light--green">72%</progress> <br />
+                    Esprit créatif
+                    <label for="file"></label><progress id="file" max="100" value="80" class="light--green">80%</progress> <br />
                     Anglais 
                     <label for="file"></label><progress id="file" max="100" value="85" class="light--green">85%</progress> <br /></p>
             </div>
@@ -72,12 +64,12 @@
             </div>
             <div class="div--experiences">
                 <H3>EXPERIENCES</H3>
-                <p>2023 ||  Opérateur en mise sous plis chez Xerox, La Chaussée St Victor<br />
+                <p> 2023 || Webdesigner chez Kerozn Web TV<br>
+                    2022 - 2023 ||  Opérateur en mise sous plis chez Xerox, La Chaussée St Victor<br />
                     2019    ||  stage chez Graphic Imprim', Saint-Gervais-la-Forêt<br />
                     2018    ||  stage chez Cogeprint, Blois<br />
                 </p>
-            </div>
-            
+            </div> 
         </div>
         <div class="div--work">
             <h1 id="projets">Projets</h1>
@@ -88,7 +80,7 @@
                     <img src="./images/2023.09.07-16.05.15.png" alt="arcs de cercles plus complexes positionnés de façon futuristes">
                 </div>
                 <video class="video-projet">
-                    <source src="./images/2023.09.08-16.34.16.mp4" type="video/mp4" />
+                    <source src="./images/2023.09.08-16.34.16.mp4" type="video/mp4"/>
                 </video>
                 <div class="img-projets">
                     <img src="./images/2023.09.12-14.40.22.png" alt="La lettre 'm' dessinée avec des Glyphes sur fond jaune.">
@@ -102,15 +94,15 @@
                         <img src="images/MacBook Pro - 1.jpg" alt="">
                     </div>
                     <div class="img-projets">
-                        <img src="images/MacBook Pro - 4.jpg" alt="">
+                        <img src="images/MacBook Pro - 4.jpg" alt="images pages site Théâtre 14">
                     </div>
             </div>
-            <h3>Maquette Site web et mobile Café la Place</h3>
+            <h3>Maquette Site web Café la Place</h3>
             <p>Maquette d'un site web d'un café fictif "Bar Café La Place" réalisée avec Figma</p>
             <div id="cafe--laplace">
                 <div class="projet-laplace">
                     <div class="img-projets">
-                        <img src="images/café temp1 16_.jpg" alt="">
+                        <img src="images/café temp1 16_.jpg" alt="page d'accueil café">
                     </div>
                 </div>
             </div>
@@ -119,10 +111,11 @@
             <div id="searching--page">
                 <div class="projet-app"></div>
                     <div class="img-projets">
-                        <img src="images/Page accueil 16_ - 1.jpg" alt="">
+                        <img src="images/Page accueil 16_ - 1.jpg" alt="page d'accueil d'une app de recensement de petits commerçants">
                     </div>
                 </div>
             </div>
+            
         </div>
         <div class="div--contact">
             <h1 id="contact">Contact</h1>

@@ -1,16 +1,24 @@
 body{
     background: var(--background-color);
-    width: auto;
     margin-bottom: 0;
-    overflow-y: auto;
     overflow-x: hidden;
+    user-select: none;
+    margin-left: 50px;
 }
-
 nav{
     display: flex;
     justify-content: end;
 }
-
+.div--header {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+#img-profile {
+    filter: drop-shadow(8px 30px var(--buttons-color));
+    display: flex;
+    margin: 0 auto;
+}
 button{
     font-family: var(--subtitle-font-family);
     font-weight: var(--subtitle-font-weight);
@@ -23,25 +31,24 @@ button{
     margin: 5px; 
     cursor: pointer;
 }
-
-.back-top-btn {
-    text-align: end;
-}
-
-#btn-top {
-    padding: 20px;
-    margin: 30px;
-    position: sticky;
-    cursor: pointer;
-    z-index: 99;
-    border-radius: 100px;
-}
-
 button:hover {
     background: var(--clicked-color);
     color: var(--buttons-color);
 }
-
+#btn-contact, #btn-projets, #btn-apropos, #btn-top {
+    filter: drop-shadow(5px 10px var(--buttons-color));
+}
+a {
+    color: var(--buttons-color);
+    font-family: var(--plain-text-font-family);
+    font-size: var(--subtitle-font-size);
+    font-weight: var(--subtitle-font-weight);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--typography-color);
+    text-decoration: underline;
+}
 h1{
     font-family: var(--title-font-family);
     font-weight: var(--title-font-weight);
@@ -49,32 +56,38 @@ h1{
     color:var(--typography-color);
     text-align: center;
 }
-
 h3{
     font-family: var(--subtitle-font-family);
     font-weight: var(--subtitle-font-weight);
     font-size: var(--subtitle-font-size);
     color: var(--buttons-color)
 }
-
 h3.skills-title {
-    width: 100%;
-    align-items: center;
     display: flex;
     flex-direction: column;
 }
-
-.div--skills {
-    width: 100%;
+progress {
+    -webkit-appearance: none;
+}
+::-webkit-progress-bar {
+    background: var(--background-color);
+    width: 250px;
+    border: 2px solid var(--buttons-color);
+    border-radius: 5px;
+}
+progress::-webkit-progress-value {
+    background-color: var(--clicked-color);
+    border-radius: 3px;
+}
+.div--stacks {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 5px;
-    text-align: center;
 }
-
+.stack {
+    width: 400px;
+}
 h3.titre-formation {
-    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -82,94 +95,48 @@ h3.titre-formation {
 }
 .div--formations {
     text-align: center;
-    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 5px;
 }
-
-.div--stacks {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 5px;
-}
-
 .div--experiences {
-    width: 100%;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    padding: 5px;
     text-align: center;
 }
-
 p{
-    
     font-family: var(--plain-text-font-family);
     font-weight: var(--plain-text-font-weight);
     font-size: var(--plain-text-font-size);
     color:var(--buttons-color);
 }
-
-progress {
-    -webkit-appearance: none;
+.div--work{
+    display: flex;
+    flex-direction: column;
 }
-
-::-webkit-progress-bar {
-    background: var(--background-color);
-    width: 250px;
-    border: 2px solid var(--buttons-color);
-    border-radius: 5px;
-}
-
-progress::-webkit-progress-value {
-    background-color: var(--clicked-color);
-    border-radius: 3px;
-}
-
-a {
-    color: var(--buttons-color);
-    font-family: var(--plain-text-font-family);
-    font-size: var(--subtitle-font-size);
-    font-weight: var(--subtitle-font-weight);
-    text-decoration: none;
-    margin: 0;
-}
-
-a:hover {
-    color: var(--typography-color);
-    text-decoration: underline;
-}
-
 #codage--creatif {
     display: flex;
     flex-direction: row;
     width: 65%;
-    margin: 15px;
+    margin-right: 15px;
+    margin-left: 50px;
 }
-
 .projet-theatre {
     display: flex;
     flex-direction: row;
-    margin: 10px;
-    padding-left: 20px;
+    align-items: center;
+    margin-left: 60px;
 }
-
 .projet-laplace {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 #searching--page {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
 }
-
 .img-projets, .video-projet{
     padding-right: 30px;
     display: flex;
@@ -177,36 +144,23 @@ a:hover {
     width: 45%;
     margin-left: 15px;
 }
-
 .div--work, .div--apropos {
     text-align: center;
 }
-
 .div--contact {
     text-align: center;
 }
-
-#img-profile {
-    filter: drop-shadow(8px 30px var(--buttons-color));
-    display: flex;
-    margin: 0 auto;
-}
-
-#btn-contact, #btn-projets, #btn-apropos, #btn-top {
-    filter: drop-shadow(5px 10px var(--buttons-color));
-}
-
-.div--header {
-    width: fit-content;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.stack {
-    width: 400px;
-}
-
 .p-contact {
     font-size: var(--subtitle-font-size);
     font-weight: var(--subtitle-font-weight);
+}
+.back-top-btn {
+    text-align: end;
+}
+#btn-top {
+    padding: 20px;
+    margin: 30px;
+    position: sticky;
+    cursor: pointer;
+    border-radius: 100px;
 }
