@@ -5,6 +5,9 @@ body{
     user-select: none;
     margin-left: 50px;
 }
+.canvas{
+    width: 1200px;
+}
 nav{
     display: flex;
     justify-content: end;
@@ -15,7 +18,7 @@ nav{
     text-align: center;
 }
 #img-profile {
-    filter: drop-shadow(8px 30px var(--buttons-color));
+    filter: drop-shadow(20px 20px var(--buttons-color));
     display: flex;
     margin: 0 auto;
 }
@@ -85,7 +88,7 @@ progress::-webkit-progress-value {
     flex-direction: column;
 }
 .stack {
-    width: 400px;
+    width: 550px;
 }
 h3.titre-formation {
     display: flex;
@@ -136,6 +139,9 @@ p{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+}
+.bien-etre img{
+    width: 1200px;
 }
 .img-projets, .video-projet{
     padding-right: 30px;
