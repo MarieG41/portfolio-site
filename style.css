@@ -6,9 +6,6 @@ body{
     margin-left: 50px;
     text-transform: uppercase;
 }
-.canvas{
-    width: 1200px;
-}
 nav{
     margin-top: 30px;
     display: flex;
@@ -195,4 +192,51 @@ p{
     position: sticky;
     cursor: pointer;
     border-radius: 100px;
+}
+
+@media screen and (max-width: 490px) {
+    body{
+        overflow-x: hidden;
+        margin-left: 0; 
+    }
+    nav{
+        display: none;
+    }
+    h1{
+        font-size: 48px;
+    }
+    h3, a{
+        font-size: 24px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .code{
+        display: none;
+    }
+    #img-profile{
+        width: 300px;
+    }
+    #apropos{
+        display: flex;
+        justify-content: center;
+    }
+    .div--skills{
+        width: 200px;
+        margin-left: 90px;
+        text-align: start;
+    }
+    .stack {
+        width: 350px;
+        margin-bottom: 20px;
+    }
+    .div--formations, .div--experiences{
+        padding: 15px;
+    }
+    .contact--info{
+        margin-bottom: 60px;
+    }
+    .back-top-btn{
+        display: none;
+    }
 }
