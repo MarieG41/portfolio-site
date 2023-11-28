@@ -1,19 +1,19 @@
 :root{
-    --background-color: #F5DFBB;
-    --typography-color: #0E9594;
-    --buttons-color: #264653;
-    --clicked-color: #F4A261;
+    --background-color: #152039;
+    --typography-color: #fff;
+    --buttons-color: #fff;
+    --clicked-color: #C1FF72;
 
-    --title-font-family: 'Bodoni Moda', serif;
+    --title-font-family: 'Anton', sans-serif;
     --subtitle-font-family: 'Jost', sans-serif;
     --plain-text-font-family: 'Jost', sans-serif;
 
-    --title-font-weight: 700;
-    --subtitle-font-weight: 600;
-    --plain-text-font-weight: 400;
+    --title-font-weight: 500;
+    --subtitle-font-weight: 400;
+    --plain-text-font-weight: 300;
 
-    --title-font-size: 6.25rem;
-    --subtitle-font-size: 1.875rem;
-    --plain-text-font-size: 0.75rem;
+    --title-font-size: 7rem;
+    --subtitle-font-size: 2rem;
+    --plain-text-font-size: 1rem;
 
 }

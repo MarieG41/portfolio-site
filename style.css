@@ -4,13 +4,21 @@ body{
     overflow-x: hidden;
     user-select: none;
     margin-left: 50px;
+    text-transform: uppercase;
 }
 .canvas{
     width: 1200px;
 }
 nav{
+    margin-top: 30px;
     display: flex;
     justify-content: end;
+}
+.code{
+    margin-top: 60px;
+    font-size: 7rem;
+    padding-left: 10px;
+    color: var(--clicked-color);
 }
 .div--header {
     width: fit-content;
@@ -18,7 +26,6 @@ nav{
     text-align: center;
 }
 #img-profile {
-    filter: drop-shadow(20px 20px var(--buttons-color));
     display: flex;
     margin: 0 auto;
 }
@@ -33,13 +40,12 @@ button{
     padding: 4px 12px;
     margin: 5px; 
     cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 20px;
 }
 button:hover {
-    background: var(--clicked-color);
-    color: var(--buttons-color);
-}
-#btn-contact, #btn-projets, #btn-apropos, #btn-top {
-    filter: drop-shadow(5px 10px var(--buttons-color));
+    border:  4px solid var(--clicked-color);
+    color: var(--clicked-color);
 }
 a {
     color: var(--buttons-color);
@@ -47,23 +53,31 @@ a {
     font-size: var(--subtitle-font-size);
     font-weight: var(--subtitle-font-weight);
     text-decoration: none;
+    text-transform: uppercase;
 }
 a:hover {
-    color: var(--typography-color);
+    color: var(--clicked-color);
     text-decoration: underline;
 }
 h1{
+    margin-top: 60px;
     font-family: var(--title-font-family);
     font-weight: var(--title-font-weight);
     font-size: var(--title-font-size);
     color:var(--typography-color);
     text-align: center;
+    margin-bottom: 60px;
 }
 h3{
+    margin-top: 20px;
     font-family: var(--subtitle-font-family);
     font-weight: var(--subtitle-font-weight);
     font-size: var(--subtitle-font-size);
-    color: var(--buttons-color)
+    color: var(--buttons-color);
+    margin-bottom: 20px;
+}
+#green-highlight{
+    color: var(--clicked-color);
 }
 h3.skills-title {
     display: flex;
@@ -75,7 +89,7 @@ progress {
 ::-webkit-progress-bar {
     background: var(--background-color);
     width: 250px;
-    border: 2px solid var(--buttons-color);
+    border: 2px solid var(--clicked-color);
     border-radius: 5px;
 }
 progress::-webkit-progress-value {
@@ -89,6 +103,7 @@ progress::-webkit-progress-value {
 }
 .stack {
     width: 550px;
+    margin-bottom: 40px;
 }
 h3.titre-formation {
     display: flex;
@@ -101,6 +116,7 @@ h3.titre-formation {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 .div--experiences {
     display: flex;
@@ -108,10 +124,12 @@ h3.titre-formation {
     text-align: center;
 }
 p{
+    margin-top: 10px;
     font-family: var(--plain-text-font-family);
     font-weight: var(--plain-text-font-weight);
     font-size: var(--plain-text-font-size);
     color:var(--buttons-color);
+    margin-bottom: 15px;
 }
 .div--work{
     display: flex;
@@ -123,22 +141,29 @@ p{
     width: 65%;
     margin-right: 15px;
     margin-left: 50px;
+    margin-bottom: 50px;
 }
 .projet-theatre {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 60px;
+    margin-bottom: 60px;
 }
 .projet-laplace {
     display: flex;
     flex-direction: row;
-    justify-content: center;  
+    justify-content: center; 
+    margin-bottom: 60px; 
 }
 #searching--page {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    margin-bottom: 60px;
+}
+.tea-timer, .Pomodoro-timer, .bien-etre, .to-do-list{
+    margin-bottom: 60px;
 }
 .bien-etre img{
     width: 1200px;
@@ -161,7 +186,8 @@ p{
     font-weight: var(--subtitle-font-weight);
 }
 .back-top-btn {
-    text-align: end;
+    display: flex;
+    justify-content: end;
 }
 #btn-top {
     padding: 20px;
