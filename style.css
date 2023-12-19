@@ -197,7 +197,7 @@ p{
 @media screen and (max-width: 490px) {
     body{
         overflow-x: hidden;
-        margin-left: 0; 
+        margin-left: 5px;
     }
     nav{
         display: none;
@@ -232,6 +232,26 @@ p{
     }
     .div--formations, .div--experiences{
         padding: 15px;
+    }
+    #codage--creatif{
+        display: flex;
+        flex-direction: column;
+        margin-left: 75px;
+    }
+    .img-projets, .video-projet{
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    .projet-theatre{
+        flex-direction: column;
+        margin-left: 0;
+        align-items: baseline;
+    }
+    .tea-timer p{
+        padding: 0 15px;
+    }
+    .tea-timer img, .Pomodoro-timer img, .bien-etre img, .to-do-list img{
+        width: 90%;
     }
     .contact--info{
         margin-bottom: 60px;
