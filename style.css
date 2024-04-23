@@ -1,20 +1,35 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
 body{
-    background: var(--background-color);
+    background: var(--second-background);
     margin-bottom: 0;
     overflow-x: hidden;
     user-select: none;
-    margin-left: 50px;
     text-transform: uppercase;
+    font-family: var(--subtitle-font-family);
+    letter-spacing: 2px;
 }
 nav{
-    margin-top: 30px;
+    padding-top: 20px;
     display: flex;
     justify-content: end;
+    margin-right: 100px;
+}
+.img--and--code {
+    position: relative;
+    margin-bottom: 40px;
 }
 .code{
-    margin-top: 60px;
+    position: absolute;
+    top: 410px;
+    left: 300px;
     font-size: 7rem;
-    padding-left: 10px;
     color: var(--clicked-color);
 }
 .div--header {
@@ -22,56 +37,69 @@ nav{
     margin: 0 auto;
     text-align: center;
 }
+.objectif {
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 150%;
+}
 #img-profile {
     display: flex;
     margin: 0 auto;
 }
 button{
-    font-family: var(--subtitle-font-family);
-    font-weight: var(--subtitle-font-weight);
-    font-size: var(--subtitle-font-size);
-    background: var(--background-color);
+    font-family: var(--plain-text-font-family);
+    font-weight: var(--plain-text-font-weight);
+    font-size: var(--plain-text-font-size);
+    background-color: var(--second-background);
     color: var(--typography-color);
-    border: 4px solid var(--buttons-color);
+    border: 2px solid var(--buttons-color);
     border-radius: 30px;
     padding: 4px 12px;
     margin: 5px; 
     cursor: pointer;
     text-transform: uppercase;
     margin-right: 20px;
+    transition: transform 200ms ease-in-out;
 }
 button:hover {
-    border:  4px solid var(--clicked-color);
+    border:  2px solid var(--clicked-color);
     color: var(--clicked-color);
+    transform: scale(1.1);
 }
 a {
     color: var(--buttons-color);
     font-family: var(--plain-text-font-family);
-    font-size: var(--subtitle-font-size);
+    font-size: var(--plain-text-font-size);
     font-weight: var(--subtitle-font-weight);
     text-decoration: none;
     text-transform: uppercase;
+    line-height: 150%;
 }
 a:hover {
     color: var(--clicked-color);
     text-decoration: underline;
 }
 h1{
-    margin-top: 60px;
+    padding-top: 20px;
     font-family: var(--title-font-family);
     font-weight: var(--title-font-weight);
     font-size: var(--title-font-size);
     color:var(--typography-color);
     text-align: center;
-    margin-bottom: 60px;
+    padding-bottom: 20px;
 }
 h3{
-    margin-top: 20px;
+    padding-top: 20px;
     font-family: var(--subtitle-font-family);
     font-weight: var(--subtitle-font-weight);
     font-size: var(--subtitle-font-size);
     color: var(--buttons-color);
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+h6 {
+    color: var(--typography-color);
 }
 #green-highlight{
     color: var(--clicked-color);
@@ -82,9 +110,10 @@ h3.skills-title {
 }
 progress {
     -webkit-appearance: none;
+    appearance: none;
 }
 ::-webkit-progress-bar {
-    background: var(--background-color);
+    background: var(--second-background);
     width: 250px;
     border: 2px solid var(--clicked-color);
     border-radius: 5px;
@@ -93,44 +122,36 @@ progress::-webkit-progress-value {
     background-color: var(--clicked-color);
     border-radius: 3px;
 }
-.div--stacks {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+span {
+    padding-left: 55px;
+    font-size: var(--span-text-font-size);
 }
-.stack {
-    width: 550px;
-    margin-bottom: 40px;
-}
-h3.titre-formation {
+
+.div--apropos {
+    margin-block: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
-    align-content: center;
 }
-.div--formations {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-.div--experiences {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.div--experiences, .div--skills, .div--formations {
+    width: 800px;
+    margin: 0 auto;
 }
 p{
-    margin-top: 10px;
+    line-height: 150%;
     font-family: var(--plain-text-font-family);
     font-weight: var(--plain-text-font-weight);
     font-size: var(--plain-text-font-size);
     color:var(--buttons-color);
-    margin-bottom: 15px;
 }
 .div--work{
     display: flex;
     flex-direction: column;
+    margin-block: 40px;
+}
+.img-portfolio {
+    margin-top: 25px;
 }
 #codage--creatif {
     display: flex;
@@ -159,11 +180,8 @@ p{
     justify-content: center;
     margin-bottom: 60px;
 }
-.tea-timer, .Pomodoro-timer, .bien-etre, .to-do-list{
+.tea-timer, .Pomodoro-timer, .to-do-list{
     margin-bottom: 60px;
-}
-.bien-etre img{
-    width: 1200px;
 }
 .img-projets, .video-projet{
     padding-right: 30px;
@@ -176,11 +194,9 @@ p{
     text-align: center;
 }
 .div--contact {
+    padding-top: 30px;
     text-align: center;
-}
-.p-contact {
-    font-size: var(--subtitle-font-size);
-    font-weight: var(--subtitle-font-weight);
+    background-color: var(--background-color);
 }
 .back-top-btn {
     display: flex;
@@ -188,73 +204,85 @@ p{
 }
 #btn-top {
     padding: 20px;
-    margin: 30px;
+    margin-bottom: 30px;
     position: sticky;
     cursor: pointer;
     border-radius: 100px;
+    background-color: var(--background-color);
 }
 
 @media screen and (max-width: 490px) {
     body{
         overflow-x: hidden;
-        margin-left: 5px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    header {
+        padding-top: 40px;
     }
     nav{
         display: none;
     }
     h1{
-        font-size: 48px;
+        font-size: var(--fs-h1);
     }
     h3, a{
-        font-size: 24px;
+        font-size: var(--fs-h3);
+    }
+    h6 {
+        max-width: 350px;
+        font-size: var(--fs-h6);
     }
     p{
-        font-size: 14px;
+        font-size: var(--fs-body);
     }
     .code{
+        display: none;
+    }
+    span {
         display: none;
     }
     #img-profile{
         width: 300px;
     }
-    #apropos{
-        display: flex;
-        justify-content: center;
+    .div--apropos {
+        display: block;
+        text-align: center;
     }
     .div--skills{
-        width: 200px;
-        margin-left: 90px;
-        text-align: start;
-    }
-    .stack {
-        width: 350px;
-        margin-bottom: 20px;
+        width: 250px;
+        margin: 0;
     }
     .div--formations, .div--experiences{
         padding: 15px;
+        width: 330px;
+        margin: 0;
     }
     #codage--creatif{
         display: flex;
         flex-direction: column;
         margin-left: 75px;
     }
-    .img-projets, .video-projet{
-        margin-bottom: 20px;
+    .img-projets {
+        width: 90%;
+    }
+    .video-projet{
+        margin-top: 20px;
         width: 90%;
     }
     .projet-theatre{
         flex-direction: column;
         margin-left: 0;
-        align-items: baseline;
+        align-items: flex-end;
     }
     .tea-timer p{
         padding: 0 15px;
     }
-    .tea-timer img, .Pomodoro-timer img, .bien-etre img, .to-do-list img{
+    .tea-timer img, .Pomodoro-timer img, .to-do-list img{
         width: 90%;
     }
     .contact--info{
-        margin-bottom: 60px;
+        padding-bottom: 60px;
     }
     .back-top-btn{
         display: none;

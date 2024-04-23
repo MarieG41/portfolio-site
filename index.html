@@ -12,57 +12,77 @@
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="param.css">
         <link rel="stylesheet" href="style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
         <script src="index.js" defer></script>
         <title>Portfolio</title>
     </head>
     <body>
         <header>
             <nav>
-                <button id="btn-contact"><a href="#contact">Contact</a></button>
+                <button id="btn-apropos"><a href="#apropos">A propos</a></button>
                 <button id="btn-projets"><a href="#projets">Projets</a></button>
-                <button id="btn-apropos"><a href="#apropos">A propos</a></button>  
+                <button id="btn-contact"><a href="#contact">Contact</a></button> 
             </nav>
-            <div class="div--header">
+            <section class="div--header">
+                <h3>Bonjour, je m'appelle</h3>
+                <h1>Marie Gond</h1>
                 <h1>Développeur Web</h1>
                 <h3 id="green-highlight">EN ALTERNANCE</h3>
-                <img id="img-profile" src="images/IMG-20231127-WA0004-removebg.png" alt="Marie qui souri">
-                <h1>Marie Gond</h1>
-            </div>
+                <h6>RYTHME: 3 SEMAINES EN ENTREPRISE / 1 SEMAINE EN COURS</h6>
+                <h6 class="objectif">en reconversion dans le développement web, je suis à la recherche d'une alternance. persévérante, réactive et rigoureuse, je souhaite acquérir de l'expérience dans ce milieu qui me passionne.</h6>
+                <div class="img--and--code">
+                    <img id="img-profile" src="images/IMG-20231127-WA0004-removebg.png" alt="Marie qui souri">
+                    <span class="material-symbols-outlined code">
+                        code
+                    </span>
+                </div>
+            </section>
         </header>
         <div class="div--apropos">
-            <span class="material-symbols-outlined code">
-                code
-                </span>
             <h1 id="apropos">A propos</h1>
                 <div class="div--skills">
                     <h3 class="skills-title">SKILLS</h3>
-                    <p>HTML5, CSS3, JavaScript 
-                    <label for="file"></label><progress id="file" max="100" value="65" class="light--green">65%</progress> <br /></p>
-                    <p>Responsive design 
-                    <label for="file"></label><progress id="file" max="100" value="70" class="light--green">70%</progress> <br /></p>
-                    <p>Git et Github 
-                    <label for="file"></label><progress id="file" max="100" value="55" class="light--green">55%</progress> <br /></p>
-                    <p>Interfaces utilisateurs et ergonomie de site web 
-                    <label for="file"></label><progress id="file" max="100" value="75" class="light--green">75%</progress> <br /></p>
+                    <p>HTML, CSS/SCSS, JavaScript
+                        <label for="file"></label><progress id="file" max="100" value="70" class="light--green">70%</progress><span> 70%
+                        </span> <br />
+                    </p>
+                    <p>Responsive design
+                        <label for="file"></label><progress id="file" max="100" value="65" class="light--green">65%</progress> <span>
+                            65% </span><br />
+                    </p>
+                    <p>Maquettage et animation sur Figma
+                        <label for="file"></label><progress id="file" max="100" value="70" class="light--green">70%</progress> <span>
+                            70% </span><br />
+                    </p>
+                    <p>Git et Github
+                        <label for="file"></label><progress id="file" max="100" value="60" class="light--green">60%</progress><span> 60%
+                        </span> <br />
+                    </p>
+                    <p>Interfaces utilisateurs
+                        <label for="file"></label><progress id="file" max="100" value="75" class="light--green">75%</progress><span> 75%
+                        </span> <br />
+                    </p>
                     <br />
-                    <p>Travail en équipe 
-                    <label for="file"></label><progress id="file" max="100" value="70" class="light--green">60%</progress> <br /></p>
-                    <p>Capacité d’adaptation et d’organisation 
-                    <label for="file"></label><progress id="file" max="100" value="70" class="light--green">70%</progress> <br /></p>
-                    <p>Sens de la communication  
-                    <label for="file"></label><progress id="file" max="100" value="65" class="light--green">65%</progress> <br /></p>
+                    <p>Travail en équipe
+                        <label for="file"></label><progress id="file" max="100" value="70" class="light--green">60%</progress><span> 70%
+                        </span> <br />
+                    </p>
+                    <p>Capacité d’adaptation et d’organisation
+                        <label for="file"></label><progress id="file" max="100" value="70" class="light--green">70%</progress> <span>
+                            70% </span><br />
+                    </p>
+                    <p>Sens de la communication
+                        <label for="file"></label><progress id="file" max="100" value="65" class="light--green">65%</progress> <span>
+                            65% </span><br />
+                    </p>
                     <p>Esprit créatif
-                    <label for="file"></label><progress id="file" max="100" value="80" class="light--green">80%</progress> <br /></p>
-                    <p>Anglais 
-                    <label for="file"></label><progress id="file" max="100" value="85" class="light--green">85%</progress> <br/></p>
-            </div>
-            <div class="div--stacks">
-                <h3>STACKS</h3>
-                <div class="img-stack">
-                    <img class="stack" src="images/pngegg.png" alt="HTML, CSS and Javascript logos">
+                        <label for="file"></label><progress id="file" max="100" value="80" class="light--green">80%</progress><span> 80%
+                        </span> <br />
+                    </p>
+                    <p>Anglais
+                        <label for="file"></label><progress id="file" max="100" value="85" class="light--green">85%</progress> <span>
+                            85% </span><br />
+                    </p>
                 </div>
-            </div>
             <h3 class="titre-formation">FORMATIONS</h3>
             <div class="div--formations">
                 <p>2023 - 2025 ||  Bac+4 Développeur Full Stack en alternance - Cloud Campus <br /></p>
@@ -73,7 +93,7 @@
             </div>
             <div class="div--experiences">
                 <H3>EXPERIENCES</H3>
-                <p> 2023 || Webdesigner chez Kerozen Web TV<br></p>
+                <p> 2023 || Alternance Webdesigner chez Kerozen Web TV, Tourcoing<br></p>
                     <p>2022 - 2023 ||  Opérateur en mise sous plis chez Xerox, La Chaussée St Victor<br /></p>
                     <p>2019    ||  stage chez Graphic Imprim', Saint-Gervais-la-Forêt<br /></p>
                     <p>2018    ||  stage chez Cogeprint, Blois<br /></p>
@@ -83,17 +103,17 @@
         <div class="div--work">
             <h1 id="projets">Projets</h1>
             <h3>Codage créatif</h3>
-            <p>Codages créatif réalisés avec Javascript, Node.js et canvas-sketch</p>
+            <p>Codages créatif réalisés avec Javascript et canvas-sketch</p>
             <div id="codage--creatif">
                 <div class="img-projets">
-                    <img src="./images/2023.09.07-16.05.15.png" alt="arcs de cercles plus complexes positionnés de façon futuristes">
+                    <img src="./images/2023.09.07-16.05.15.png" alt="arcs de cercles plus complexes positionnés de façon futuristes" class="img-portfolio">
                 </div>
                 <video autoplay loop class="video-projet">
                     <source src="./images/2023.09.08-16.34.16.mp4" type="video/mp4" />
                     <a href="./images/2023.09.08-16.34.16.mp4">MP4</a>
                 </video>
                 <div class="img-projets">
-                    <img src="./images/2023.09.12-14.40.22.png" alt="La lettre 'm' dessinée avec des Glyphes sur fond jaune.">
+                    <img src="./images/2023.09.12-14.40.22.png" alt="La lettre 'm' dessinée avec des Glyphes sur fond jaune." class="img-portfolio">
                 </div>
             </div>
             <h3>Théâtre 14</h3>
@@ -101,10 +121,10 @@
             <div id="theatre--14">
                 <div class="projet-theatre">
                     <div class="img-projets">
-                        <img src="images/MacBook Pro - 1.jpg" alt="">
+                        <img src="images/MacBook Pro - 1.jpg" alt="image page site Théâtre 14" class="img-portfolio">
                     </div>
                     <div class="img-projets">
-                        <img src="images/MacBook Pro - 4.jpg" alt="images pages site Théâtre 14">
+                        <img src="images/MacBook Pro - 4.jpg" alt="images pages site Théâtre 14" class="img-portfolio">
                     </div>
             </div>
             <h3>Maquette Site web Café la Place</h3>
@@ -112,7 +132,7 @@
             <div id="cafe--laplace">
                 <div class="projet-laplace">
                     <div class="img-projets">
-                        <img src="images/café temp1 16_.jpg" alt="page d'accueil café">
+                        <img src="images/café temp1 16_.jpg" alt="page d'accueil café" class="img-portfolio">
                     </div>
                 </div>
             </div>
@@ -121,48 +141,38 @@
             <div id="searching--page">
                 <div class="projet-app"></div>
                     <div class="img-projets">
-                        <img src="images/Page accueil 16_ - 1.jpg" alt="page d'accueil d'une app de recensement de petits commerçants">
+                        <img src="images/Page accueil 16_ - 1.jpg" alt="page d'accueil d'une app de recensement de petits commerçants" class="img-portfolio">
                     </div>
                 </div>
             </div>
             <div class="tea-timer">
                 <h3>Tea Timer</h3>
                 <p>Une application web qui permet à l'utilisateur de savoir combien de temps laisser infuser son thé. <br> L'utilisateur peut choisir entre différents types de thé celui qu'il est en train de préparer pour connaître le temps nécessaire. <br> Ensuite, il n'a plus qu'a lancer le timer et à attendre que celui-ci atteigne 0. Et voilà son thé est prêt!</p>
-                <a href="https://marieg41.github.io/Tea-Timer/" target="_blank"><img src="images/Capture d'écran 2023-11-27 154805.png" alt="écran d'accueil de Tea Timer"></a>
+                <a href="https://marieg41.github.io/Tea-Timer/" target="_blank"><img src="images/Capture d'écran 2023-11-27 154805.png" alt="écran d'accueil de Tea Timer" class="img-portfolio"></a>
             </div>
             <div class="Pomodoro-timer">
                 <h3>Un timer Pomodoro</h3>
                 <p>Une application web permettant d'appliquer la méthode Pomodoro lors de périodes d'étude ou de travail pour rester concentré.</p>
-                <a href="https://marieg41.github.io/Pomodoro-timer/" target="_blank"><img src="images/Capture d'écran 2023-11-27 155708.png" alt="écran d'accueil de mon timer pomodoro"></a>
-            </div>
-            <div class="bien-etre">
-                <h3>Intégration d'une maquette d'un site de salon de massage</h3>
-                <p>Intégration d'une maquette fictive de salon de massage à partir d'une maquette réalisée sur Figma</p>
-                <a href="https://marieg41.github.io/Bien-etre/" target="_blank">
-                <img src="images/Capture d'écran 2023-11-27 160641.png" alt="page d'accueil massages"></a>
+                <a href="https://marieg41.github.io/Pomodoro-timer/" target="_blank"><img src="images/Capture d'écran 2023-11-27 155708.png" alt="écran d'accueil de mon timer pomodoro" class="img-portfolio"></a>
             </div>
             <div class="to-do-list">
                 <h3>Web App pour To-do List</h3>
                 <p>Une Application web qui permet d'écrire des To-do List. <br>L'utilisateur à la possibilité d'ajouter du contenu lorsqu'il ajoute une nouvelle tâche à faire et de supprimer du contenu lorsque la tâche est réalisée.</p>
                 <a href="https://marieg41.github.io/To-do-List-App/" target="_blank">
-                <img src="images/Capture d'écran 2023-11-27 161305.png" alt=""></a> <br>
-                <span class="material-symbols-outlined code">
-                    code
-                    </span>
+                    <img src="images/Capture d'écran 2023-11-27 161305.png" alt="image de mon projet de to do list" class="img-portfolio"></a> <br>
             </div>
         </div>
-        <div class="div--contact">
+        <footer class="div--contact">
             <h1 id="contact">Contact</h1>
             <div class="contact--info">
-                    <p class="p-contact">téléphone: 0649746947</p>
-                    <a href="mailto:mariegond8@gmail.com" target="_blank">Email</a> <br />
+                    <a href="mailto:mariegond8@gmail.com" target="_blank">mariegond8@gmail.com</a> <br />
                     <a href="http://www.linkedin.com/in/mariegond" target="_blank">LinkedIn</a> <br />
                     <!--<a href="https://instagram.com/mar.iegd?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">Instagram</a><br>-->
                     <a href="https://github.com/MarieG41" target="_blank">Github</a>
             </div>
-        </div>
-        <div class="back-top-btn">
-            <button onclick="topFunction()" id="btn-top">Top</button>
-        </div>
+            <div class="back-top-btn">
+                <button onclick="topFunction()" id="btn-top">Top</button>
+            </div>
+        </footer>
     </body>
 </html>

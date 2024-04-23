@@ -3,6 +3,7 @@
     --typography-color: #fff;
     --buttons-color: #fff;
     --clicked-color: #C1FF72;
+    --second-background: #25355c;
 
     --title-font-family: 'Anton', sans-serif;
     --subtitle-font-family: 'Jost', sans-serif;
@@ -12,8 +13,17 @@
     --subtitle-font-weight: 400;
     --plain-text-font-weight: 300;
 
-    --title-font-size: 7rem;
+    --title-font-size: 5rem;
     --subtitle-font-size: 2rem;
     --plain-text-font-size: 1rem;
+    --span-text-font-size: 0.70rem;
+}
 
+@media screen and (max-width: 490px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h6: .75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
 }
