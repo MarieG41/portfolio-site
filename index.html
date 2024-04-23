@@ -26,11 +26,11 @@
                 <h3>Bonjour, je m'appelle</h3>
                 <h1>Marie Gond</h1>
                 <h1>Développeur Web</h1>
-                <h3 id="green-highlight">EN ALTERNANCE</h3>
+                <h3 class="green-highlight">EN ALTERNANCE</h3>
                 <h6>RYTHME: 3 SEMAINES EN ENTREPRISE / 1 SEMAINE EN COURS</h6>
                 <h6 class="objectif">en reconversion dans le développement web, je suis à la recherche d'une alternance. persévérante, réactive et rigoureuse, je souhaite acquérir de l'expérience dans ce milieu qui me passionne.</h6>
                 <div class="img--and--code">
-                    <img id="img-profile" src="images/IMG-20231127-WA0004-removebg.png" alt="Marie qui souri">
+                    <img id="img-profile" src="images/IMG-20231127-WA0004-removebg.png" alt="Marie qui sourie">
                     <span class="material-symbols-outlined code">
                         code
                     </span>
@@ -54,6 +54,10 @@
                             70% </span><br />
                     </p>
                     <p>Git et Github
+                        <label for="file"></label><progress id="file" max="100" value="60" class="light--green">60%</progress><span> 60%
+                        </span> <br />
+                    </p>
+                    <p>ACCESSIBILITÉ ET SEO
                         <label for="file"></label><progress id="file" max="100" value="60" class="light--green">60%</progress><span> 60%
                         </span> <br />
                     </p>
@@ -85,82 +89,91 @@
                 </div>
             <h3 class="titre-formation">FORMATIONS</h3>
             <div class="div--formations">
-                <p>2023 - 2025 ||  Bac+4 Développeur Full Stack en alternance - Cloud Campus <br /></p>
-                    <p>2021    ||  Licence pro mention Métiers du design, parcours design graphique, éditorial et multimédia / Université Rennes 2, Rennes<br /></p>
-                    <p>2020    ||  Design Graphique option communication et médias imprimés / Lycée Joseph Savina, Tréguier<br /></p>
-                    <p>2018    ||  Baccalauréat STD2A / Lycée Camille Claudel, Blois</p> 
+                <p><span class="green-highlight">2023 - 2025 ||  </span>Bac+4 Développeur Full Stack en alternance - Cloud Campus <br /><a href="https://cloud-campus.fr/ " target="_blank">https://cloud-campus.fr/ </a> </p>
+                    <p><span class="green-highlight">2021    ||  </span>Licence pro mention Métiers du design, parcours design graphique, éditorial et multimédia / Université Rennes 2, Rennes<br /></p>
+                    <p><span class="green-highlight">2020    ||  </span>Design Graphique option communication et médias imprimés / Lycée Joseph Savina, Tréguier<br /></p>
+                    <p><span class="green-highlight">2018    ||  </span>Baccalauréat STD2A / Lycée Camille Claudel, Blois</p> 
                 </p>
             </div>
             <div class="div--experiences">
                 <H3>EXPERIENCES</H3>
-                <p> 2023 || Alternance Webdesigner chez Kerozen Web TV, Tourcoing<br></p>
-                    <p>2022 - 2023 ||  Opérateur en mise sous plis chez Xerox, La Chaussée St Victor<br /></p>
-                    <p>2019    ||  stage chez Graphic Imprim', Saint-Gervais-la-Forêt<br /></p>
-                    <p>2018    ||  stage chez Cogeprint, Blois<br /></p>
+                <p><span class="green-highlight">2023 || </span>Alternance Webdesigner chez Kerozen Web TV, Tourcoing<br></p>
+                    <p><span class="green-highlight">2022 - 2023 || </span> Opérateur en mise sous plis chez Xerox, La Chaussée St Victor<br /></p>
+                    <p><span class="green-highlight">2019    ||  </span>stage chez Graphic Imprim', Saint-Gervais-la-Forêt<br /></p>
+                    <p><span class="green-highlight">2018    ||  </span>stage chez Cogeprint, Blois<br /></p>
                 </p>
             </div> 
+            <div class="hobbys">
+                <H3>CENTRES D'INTÉRÊT</H3>
+                <div class="div--hobbys">
+                    <div class="div--ux">
+                        <img src="images/illustrations/techny-ux-slash-ui-text-with-laptop-and-web-design-elements-lettering.png"
+                            alt="">
+                        <p>LECTURE D'ARTICLES SUR L'UX ET LES TENDANCES EN DÉVELOPPEMENT WEB </p>
+                        <p>FAIRE DES WIREFRAME ET DES MAQUETTES DE SITE WEB DANS FIGMA </p>
+                    </div>
+                    <div class="div--knit">
+                        <img src="images/illustrations/pablita-knitting-woman.png" alt="">
+                        <p>Faire du tricot et du crochet pour se détendre</p>
+                    </div>
+                    <div class="div-cooking">
+                        <img src="images/illustrations/storyline-instant-noodles.png" alt="">
+                        <p>CUISINER DES RECETTES ASIATIQUES NOTAMMENT JAPONAISE ET CORÉENNE </p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
         <div class="div--work">
             <h1 id="projets">Projets</h1>
-            <h3>Codage créatif</h3>
-            <p>Codages créatif réalisés avec Javascript et canvas-sketch</p>
-            <div id="codage--creatif">
-                <div class="img-projets">
-                    <img src="./images/2023.09.07-16.05.15.png" alt="arcs de cercles plus complexes positionnés de façon futuristes" class="img-portfolio">
+            <div class="projets-webapp">
+                <div class="tea-timer">
+                    <a href="https://marieg41.github.io/Tea-Timer/" target="_blank"><img
+                            src="images/projets/Capture d'écran 2023-11-27 154805.png" alt="écran d'accueil de Tea Timer"
+                            class="img-portfolio"></a>
+                    <h3>Tea Timer</h3>
                 </div>
-                <video autoplay loop class="video-projet">
-                    <source src="./images/2023.09.08-16.34.16.mp4" type="video/mp4" />
-                    <a href="./images/2023.09.08-16.34.16.mp4">MP4</a>
-                </video>
-                <div class="img-projets">
-                    <img src="./images/2023.09.12-14.40.22.png" alt="La lettre 'm' dessinée avec des Glyphes sur fond jaune." class="img-portfolio">
+                <div class="Pomodoro-timer">
+                    <a href="https://marieg41.github.io/Pomodoro-timer/" target="_blank"><img
+                            src="images/projets/Capture d'écran 2023-11-27 155708.png" alt="écran d'accueil de mon timer pomodoro"
+                            class="img-portfolio"></a>
+                    <h3>Un timer Pomodoro</h3>
                 </div>
-            </div>
-            <h3>Théâtre 14</h3>
-            <p>Maquette du théâtre 14 réalisée avec Figma</p>
-            <div id="theatre--14">
-                <div class="projet-theatre">
-                    <div class="img-projets">
-                        <img src="images/MacBook Pro - 1.jpg" alt="image page site Théâtre 14" class="img-portfolio">
-                    </div>
-                    <div class="img-projets">
-                        <img src="images/MacBook Pro - 4.jpg" alt="images pages site Théâtre 14" class="img-portfolio">
-                    </div>
-            </div>
-            <h3>Maquette Site web Café la Place</h3>
-            <p>Maquette d'un site web d'un café fictif "Bar Café La Place" réalisée avec Figma</p>
-            <div id="cafe--laplace">
-                <div class="projet-laplace">
-                    <div class="img-projets">
-                        <img src="images/café temp1 16_.jpg" alt="page d'accueil café" class="img-portfolio">
-                    </div>
+                <div class="to-do-list">
+                    <a href="https://marieg41.github.io/To-do-List-App/" target="_blank">
+                        <img src="images/projets/Capture d'écran 2023-11-27 161305.png" alt="image de mon projet de to do list"
+                            class="img-portfolio"></a>
+                    <h3>Web App pour To-do List</h3>
                 </div>
             </div>
-            <h3>page d'accueil d'un site locale</h3>
-            <p>Maquette de page d'accueil fictive pour un site référent les commerces locaux réalisée avec Figma</p>
-            <div id="searching--page">
-                <div class="projet-app"></div>
-                    <div class="img-projets">
-                        <img src="images/Page accueil 16_ - 1.jpg" alt="page d'accueil d'une app de recensement de petits commerçants" class="img-portfolio">
-                    </div>
+            <div class="front-end--mentor-preview">
+                <div class="faq-accordion">
+                    <img src="images/projets/desktop-preview-faq.jpg" alt="composant en accordéon pour une faq">
+                    <h3>Page de FAQ</h3>
+                </div>
+                <div class="product-component-preview">
+                    <img src="images/projets/desktop-preview-product-component.jpg" alt="composant pour une prévisualisation d'un produit">
+                    <h3>prévisualisation d'une fiche produit</h3>
+                </div>
+                <div class="dropdown">
+                    <img src="images/projets/desktop-preview-dropdown.jpg" alt="accueil d'un site avec une navigation à menus dépliants">
+                    <h3>Accueil avec des menus dépliants</h3>
+                </div>
+                <div class="dashboard-theme-switcher">
+                    <img src="images/projets/desktop-preview-dashboard.jpg" alt="un dashboard pour les réseaux sociaux avec un theme dark/light">
+                    <h3>Un dashboard pour le réseaux sociaux avec un thème dark/light</h3>
                 </div>
             </div>
-            <div class="tea-timer">
-                <h3>Tea Timer</h3>
-                <p>Une application web qui permet à l'utilisateur de savoir combien de temps laisser infuser son thé. <br> L'utilisateur peut choisir entre différents types de thé celui qu'il est en train de préparer pour connaître le temps nécessaire. <br> Ensuite, il n'a plus qu'a lancer le timer et à attendre que celui-ci atteigne 0. Et voilà son thé est prêt!</p>
-                <a href="https://marieg41.github.io/Tea-Timer/" target="_blank"><img src="images/Capture d'écran 2023-11-27 154805.png" alt="écran d'accueil de Tea Timer" class="img-portfolio"></a>
-            </div>
-            <div class="Pomodoro-timer">
-                <h3>Un timer Pomodoro</h3>
-                <p>Une application web permettant d'appliquer la méthode Pomodoro lors de périodes d'étude ou de travail pour rester concentré.</p>
-                <a href="https://marieg41.github.io/Pomodoro-timer/" target="_blank"><img src="images/Capture d'écran 2023-11-27 155708.png" alt="écran d'accueil de mon timer pomodoro" class="img-portfolio"></a>
-            </div>
-            <div class="to-do-list">
-                <h3>Web App pour To-do List</h3>
-                <p>Une Application web qui permet d'écrire des To-do List. <br>L'utilisateur à la possibilité d'ajouter du contenu lorsqu'il ajoute une nouvelle tâche à faire et de supprimer du contenu lorsque la tâche est réalisée.</p>
-                <a href="https://marieg41.github.io/To-do-List-App/" target="_blank">
-                    <img src="images/Capture d'écran 2023-11-27 161305.png" alt="image de mon projet de to do list" class="img-portfolio"></a> <br>
-            </div>
+           <div class="front-end--mentor-desktop">
+                <div class="fylo-dark">
+                    <img src="images/projets/desktop-design-fylo-dark.jpg" alt="landing page fylo dark">
+                    <h3>Landing page Fylo</h3>
+                </div>
+                <div class="sunny-side-agency">
+                    <img src="images/projets/desktop-design-sunny-side.jpg" alt="landing page sunny side agency">
+                    <h3>Landing page Sunny side Agency</h3>
+                </div>
+           </div>
         </div>
         <footer class="div--contact">
             <h1 id="contact">Contact</h1>

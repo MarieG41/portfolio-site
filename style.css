@@ -36,6 +36,7 @@ nav{
     width: fit-content;
     margin: 0 auto;
     text-align: center;
+    margin-block: 50px;
 }
 .objectif {
     width: 800px;
@@ -46,6 +47,7 @@ nav{
 #img-profile {
     display: flex;
     margin: 0 auto;
+    border-radius: 70px;
 }
 button{
     font-family: var(--plain-text-font-family);
@@ -101,8 +103,12 @@ h3{
 h6 {
     color: var(--typography-color);
 }
-#green-highlight{
+.green-highlight{
     color: var(--clicked-color);
+}
+span.green-highlight{
+    color: var(--clicked-color);
+    font-size: var(--plain-text-font-size);
 }
 h3.skills-title {
     display: flex;
@@ -133,10 +139,25 @@ span {
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 .div--experiences, .div--skills, .div--formations {
     width: 800px;
     margin: 0 auto;
+}
+
+.div--hobbys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    padding-inline: 200px;
+    padding-block: 50px;
+}
+.div--hobbys img {
+    height: 250px;
+}
+.div--hobbys p {
+    padding-top: 20px;
 }
 p{
     line-height: 150%;
@@ -150,51 +171,44 @@ p{
     flex-direction: column;
     margin-block: 40px;
 }
+.projets-webapp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-block: 30px;
+    padding-inline: 70px;
+}
+.front-end--mentor-preview{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-block: 30px;
+    padding-inline: 120px;
+    gap: 10px;
+}
+.front-end--mentor-preview img {
+    width: 100%;
+    
+}
+.front-end--mentor-desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-block-start: 30px;
+    padding-block-end: 200px;
+    padding-inline: 120px;
+    gap: 10px;
+}
+.front-end--mentor-desktop img {
+    width: 100%;
+    height: 100%;
+}
 .img-portfolio {
     margin-top: 25px;
 }
-#codage--creatif {
-    display: flex;
-    flex-direction: row;
-    width: 65%;
-    margin-right: 15px;
-    margin-left: 50px;
-    margin-bottom: 50px;
-}
-.projet-theatre {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 60px;
-    margin-bottom: 60px;
-}
-.projet-laplace {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    margin-bottom: 60px; 
-}
-#searching--page {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin-bottom: 60px;
-}
-.tea-timer, .Pomodoro-timer, .to-do-list{
-    margin-bottom: 60px;
-}
-.img-projets, .video-projet{
-    padding-right: 30px;
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    margin-left: 15px;
-}
-.div--work, .div--apropos {
+.div--work {
     text-align: center;
+    margin: 0 auto;
 }
 .div--contact {
-    padding-top: 30px;
+    padding-top: 50px;
     text-align: center;
     background-color: var(--background-color);
 }
@@ -207,7 +221,7 @@ p{
     margin-bottom: 30px;
     position: sticky;
     cursor: pointer;
-    border-radius: 100px;
+    border-radius: 100%;
     background-color: var(--background-color);
 }
 
@@ -224,10 +238,18 @@ p{
         display: none;
     }
     h1{
+        padding-top: 40px;
         font-size: var(--fs-h1);
     }
-    h3, a{
+    h3{
         font-size: var(--fs-h3);
+    }
+    h3.skills-title {
+        align-items: center;
+    }
+    a {
+        font-size: var(--fs-body);
+        text-decoration: underline;
     }
     h6 {
         max-width: 350px;
@@ -248,38 +270,45 @@ p{
     .div--apropos {
         display: block;
         text-align: center;
+        margin: 0 auto;
+        width: 330px;
     }
     .div--skills{
+        text-align: left;
         width: 250px;
-        margin: 0;
+        margin: 0 auto;
     }
     .div--formations, .div--experiences{
         padding: 15px;
         width: 330px;
         margin: 0;
     }
-    #codage--creatif{
-        display: flex;
-        flex-direction: column;
-        margin-left: 75px;
+    .div--hobbys {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 330px;
+        padding-inline: 0;
+        padding-block: 0;
+    }
+    .div--hobbys img {
+        height: 150px;
+    }
+    .projets-webapp, .front-end--mentor-preview, .front-end--mentor-desktop {
+        display: block;
+        padding-inline: 30px;
+    }
+    .front-end--mentor-desktop {
+        padding-block-end: 50px;
     }
     .img-projets {
         width: 90%;
     }
-    .video-projet{
-        margin-top: 20px;
-        width: 90%;
-    }
-    .projet-theatre{
-        flex-direction: column;
-        margin-left: 0;
-        align-items: flex-end;
-    }
-    .tea-timer p{
-        padding: 0 15px;
-    }
     .tea-timer img, .Pomodoro-timer img, .to-do-list img{
         width: 90%;
+    }
+    .div--contact {
+        width: 400px;
     }
     .contact--info{
         padding-bottom: 60px;
